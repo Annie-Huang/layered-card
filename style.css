@@ -103,5 +103,11 @@ body {
   height: 0.6em;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
-  background: limegreen;
+  background: var(--status-color, black);
+}
+.status[data-status='active'] {
+  --status-color: limegreen;
+}
+.status[data-status='away'] {
+  --status-color: rgb(216, 152, 14);
 }
