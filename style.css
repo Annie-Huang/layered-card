@@ -4,7 +4,11 @@
   --clr-neutral-100: hsl(0, 0%, 100%);
   --clr-neutral-900: hsl(230, 32%, 15%);
 
-  --gradient: 45deg, var(--clr-primary), var(--clr-secondary);
+  --gradient: linear-gradient(
+    -255deg,
+    var(--clr-primary),
+    var(--clr-secondary)
+  );
 }
 
 body {
@@ -21,7 +25,8 @@ body {
   grid-template-rows: repeat(3, auto);
 }
 .welcome {
-  background: lightblue;
+  color: var(--clr-neutral-100);
+  background: var(--gradient);
   grid-column: 1 / -1;
   grid-row: 1 / 3;
 
