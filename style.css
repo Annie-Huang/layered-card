@@ -15,12 +15,20 @@ body {
   grid-row: 1 / 3;
 
   display: grid;
-  /* Putting subgrid meaning the content can share the parent's grid setup, e.g. 3 rows
+  /* Putting the row to use subgrid meaning the content can share the parent's grid row setup, e.g. 3 rows
      And be because the content only got 1 div, it will occupy in row 1.
      And because the bottom card take row 2-3, it will auto put under the content
   */
   grid-template-rows: subgrid;
+  /* Putting the column to use subgrid meaning the content can be share teh parent's grid column setup, e.g. 3 columns
+     So below we can it up to be placed into the middle column in '.welcome div'
+  */
+  grid-template-columns: subgrid;
 }
+.welcome div {
+  grid-column: 2 / 3;
+}
+
 .start-chatting {
   background: coral;
   grid-column: 2 / 3;
