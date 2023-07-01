@@ -6,11 +6,14 @@ body {
 
 .card {
   display: grid;
+  grid-template-columns: 2rem 20rem 2rem;
   grid-template-rows: repeat(3, auto);
 }
 .welcome {
   background: lightblue;
+  grid-column: 1 / -1;
 }
 .start-chatting {
   background: coral;
+  grid-column: 2 / 3;
 }
