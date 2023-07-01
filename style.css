@@ -80,6 +80,9 @@ body {
   font-size: 1.125rem;
 }
 .status {
+  display: flex;
+  gap: 0.35em;
+  align-items: center;
   font-size: 0.875rem;
   border: 1px solid rgb(133, 133, 133);
   border-radius: 100vw;
@@ -87,4 +90,18 @@ body {
   padding: 0.05em 0.75em;
   margin-inline: auto;
   opacity: 0.7;
+}
+.status::before {
+  content: '';
+
+  /* the height of a lower case letter in the same line */
+  /*height: 1ex;*/
+
+  /* the height of a line-height, only support in chrome */
+  /*height: 1lh;*/
+
+  height: 0.6em;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background: limegreen;
 }
