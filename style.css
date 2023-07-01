@@ -20,6 +20,22 @@ body {
   place-content: center;
 }
 
+.button {
+  padding: 1em;
+  background: var(--gradient);
+  color: var(--clr-neutral-100);
+  border: 0;
+  border-radius: 0.25rem;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: background-size 200ms, scale 250ms ease-in-out;
+}
+.button:hover,
+.button:focus {
+  background-size: 200%;
+  scale: 1.05;
+}
+
 .card {
   display: grid;
   grid-template-columns: 2rem 20rem 2rem;
