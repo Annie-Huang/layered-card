@@ -2,4 +2,5 @@ Creating a layered card with HTML & CSS (https://www.youtube.com/watch?v=TskEjH6
 
 https://github.com/Annie-Huang/layered-card
 
+https://pravatar.cc/
 =======================================================================
